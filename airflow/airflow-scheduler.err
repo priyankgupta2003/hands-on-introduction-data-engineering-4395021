@@ -3,3 +3,7 @@
 [2024-11-28 09:32:16 +0000] [4291] [INFO] Using worker: sync
 [2024-11-28 09:32:16 +0000] [4294] [INFO] Booting worker with pid: 4294
 [2024-11-28 09:32:17 +0000] [4296] [INFO] Booting worker with pid: 4296
+[2024-11-28 11:18:43 +0000] [4291] [INFO] Handling signal: term
+[2024-11-28 11:18:43 +0000] [4296] [INFO] Worker exiting (pid: 4296)
+[2024-11-28 11:18:43 +0000] [4294] [INFO] Worker exiting (pid: 4294)
+[2024-11-28 11:18:43 +0000] [4291] [INFO] Shutting down: Master

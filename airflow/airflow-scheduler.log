@@ -135,3 +135,91 @@
 2024-11-28 10:52:59,348 INFO - Marking run <DagRun basic_etl_dag @ 2024-11-28 10:52:51.873897+00:00: manual__2024-11-28T10:52:51.873897+00:00, state:running, queued_at: 2024-11-28 10:52:51.885287+00:00. externally triggered: True> successful
 2024-11-28 10:52:59,348 INFO - DagRun Finished: dag_id=basic_etl_dag, execution_date=2024-11-28 10:52:51.873897+00:00, run_id=manual__2024-11-28T10:52:51.873897+00:00, run_start_date=2024-11-28 10:52:52.307707+00:00, run_end_date=2024-11-28 10:52:59.348598+00:00, run_duration=7.040891, state=success, external_trigger=True, run_type=manual, data_interval_start=2024-11-28 10:52:51.873897+00:00, data_interval_end=2024-11-28 10:52:51.873897+00:00, dag_hash=bae6be2e9d9b5d6377abab1b20839366
 2024-11-28 10:57:17,533 INFO - Resetting orphaned tasks for active dag runs
+2024-11-28 11:02:17,563 INFO - Resetting orphaned tasks for active dag runs
+2024-11-28 11:07:17,697 INFO - Resetting orphaned tasks for active dag runs
+2024-11-28 11:08:22,059 INFO - 1 tasks up for execution:
+	<TaskInstance: challenge_dag.extract_task manual__2024-11-28T11:08:21.346465+00:00 [scheduled]>
+2024-11-28 11:08:22,059 INFO - DAG challenge_dag has 0/16 running and queued tasks
+2024-11-28 11:08:22,059 INFO - Setting the following tasks to queued state:
+	<TaskInstance: challenge_dag.extract_task manual__2024-11-28T11:08:21.346465+00:00 [scheduled]>
+2024-11-28 11:08:22,061 INFO - Sending TaskInstanceKey(dag_id='challenge_dag', task_id='extract_task', run_id='manual__2024-11-28T11:08:21.346465+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default
+2024-11-28 11:08:22,061 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'challenge_dag', 'extract_task', 'manual__2024-11-28T11:08:21.346465+00:00', '--local', '--subdir', 'DAGS_FOLDER/challenge_dag.py']
+2024-11-28 11:08:22,064 INFO - Executing command: ['airflow', 'tasks', 'run', 'challenge_dag', 'extract_task', 'manual__2024-11-28T11:08:21.346465+00:00', '--local', '--subdir', 'DAGS_FOLDER/challenge_dag.py']
+2024-11-28 11:08:24,163 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='challenge_dag', task_id='extract_task', run_id='manual__2024-11-28T11:08:21.346465+00:00', try_number=1, map_index=-1)
+2024-11-28 11:08:24,166 INFO - TaskInstance Finished: dag_id=challenge_dag, task_id=extract_task, run_id=manual__2024-11-28T11:08:21.346465+00:00, map_index=-1, run_start_date=2024-11-28 11:08:23.566984+00:00, run_end_date=2024-11-28 11:08:23.844345+00:00, run_duration=0.277361, state=failed, executor_state=success, try_number=1, max_tries=0, job_id=12, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2024-11-28 11:08:22.060264+00:00, queued_by_job_id=2, pid=47163
+2024-11-28 11:08:25,242 ERROR - Marking run <DagRun challenge_dag @ 2024-11-28 11:08:21.346465+00:00: manual__2024-11-28T11:08:21.346465+00:00, state:running, queued_at: 2024-11-28 11:08:21.355642+00:00. externally triggered: True> failed
+2024-11-28 11:08:25,242 INFO - DagRun Finished: dag_id=challenge_dag, execution_date=2024-11-28 11:08:21.346465+00:00, run_id=manual__2024-11-28T11:08:21.346465+00:00, run_start_date=2024-11-28 11:08:22.042916+00:00, run_end_date=2024-11-28 11:08:25.242595+00:00, run_duration=3.199679, state=failed, external_trigger=True, run_type=manual, data_interval_start=2024-11-28 11:08:21.346465+00:00, data_interval_end=2024-11-28 11:08:21.346465+00:00, dag_hash=46c779a975eaad6d31a62413be935376
+2024-11-28 11:12:07,650 INFO - 1 tasks up for execution:
+	<TaskInstance: challenge_dag.extract_task manual__2024-11-28T11:12:06.741925+00:00 [scheduled]>
+2024-11-28 11:12:07,650 INFO - DAG challenge_dag has 0/16 running and queued tasks
+2024-11-28 11:12:07,650 INFO - Setting the following tasks to queued state:
+	<TaskInstance: challenge_dag.extract_task manual__2024-11-28T11:12:06.741925+00:00 [scheduled]>
+2024-11-28 11:12:07,652 INFO - Sending TaskInstanceKey(dag_id='challenge_dag', task_id='extract_task', run_id='manual__2024-11-28T11:12:06.741925+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default
+2024-11-28 11:12:07,652 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'challenge_dag', 'extract_task', 'manual__2024-11-28T11:12:06.741925+00:00', '--local', '--subdir', 'DAGS_FOLDER/challenge_dag.py']
+2024-11-28 11:12:07,655 INFO - Executing command: ['airflow', 'tasks', 'run', 'challenge_dag', 'extract_task', 'manual__2024-11-28T11:12:06.741925+00:00', '--local', '--subdir', 'DAGS_FOLDER/challenge_dag.py']
+2024-11-28 11:12:09,904 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='challenge_dag', task_id='extract_task', run_id='manual__2024-11-28T11:12:06.741925+00:00', try_number=1, map_index=-1)
+2024-11-28 11:12:09,908 INFO - TaskInstance Finished: dag_id=challenge_dag, task_id=extract_task, run_id=manual__2024-11-28T11:12:06.741925+00:00, map_index=-1, run_start_date=2024-11-28 11:12:09.267540+00:00, run_end_date=2024-11-28 11:12:09.574781+00:00, run_duration=0.307241, state=success, executor_state=success, try_number=1, max_tries=0, job_id=13, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2024-11-28 11:12:07.651375+00:00, queued_by_job_id=2, pid=48730
+2024-11-28 11:12:10,068 INFO - 1 tasks up for execution:
+	<TaskInstance: challenge_dag.transform_task manual__2024-11-28T11:12:06.741925+00:00 [scheduled]>
+2024-11-28 11:12:10,068 INFO - DAG challenge_dag has 0/16 running and queued tasks
+2024-11-28 11:12:10,068 INFO - Setting the following tasks to queued state:
+	<TaskInstance: challenge_dag.transform_task manual__2024-11-28T11:12:06.741925+00:00 [scheduled]>
+2024-11-28 11:12:10,069 INFO - Sending TaskInstanceKey(dag_id='challenge_dag', task_id='transform_task', run_id='manual__2024-11-28T11:12:06.741925+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2024-11-28 11:12:10,070 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'challenge_dag', 'transform_task', 'manual__2024-11-28T11:12:06.741925+00:00', '--local', '--subdir', 'DAGS_FOLDER/challenge_dag.py']
+2024-11-28 11:12:10,072 INFO - Executing command: ['airflow', 'tasks', 'run', 'challenge_dag', 'transform_task', 'manual__2024-11-28T11:12:06.741925+00:00', '--local', '--subdir', 'DAGS_FOLDER/challenge_dag.py']
+2024-11-28 11:12:11,959 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='challenge_dag', task_id='transform_task', run_id='manual__2024-11-28T11:12:06.741925+00:00', try_number=1, map_index=-1)
+2024-11-28 11:12:11,962 INFO - TaskInstance Finished: dag_id=challenge_dag, task_id=transform_task, run_id=manual__2024-11-28T11:12:06.741925+00:00, map_index=-1, run_start_date=2024-11-28 11:12:11.532204+00:00, run_end_date=2024-11-28 11:12:11.633508+00:00, run_duration=0.101304, state=success, executor_state=success, try_number=1, max_tries=0, job_id=14, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2024-11-28 11:12:10.068947+00:00, queued_by_job_id=2, pid=48749
+2024-11-28 11:12:12,006 INFO - 1 tasks up for execution:
+	<TaskInstance: challenge_dag.load_task manual__2024-11-28T11:12:06.741925+00:00 [scheduled]>
+2024-11-28 11:12:12,006 INFO - DAG challenge_dag has 0/16 running and queued tasks
+2024-11-28 11:12:12,006 INFO - Setting the following tasks to queued state:
+	<TaskInstance: challenge_dag.load_task manual__2024-11-28T11:12:06.741925+00:00 [scheduled]>
+2024-11-28 11:12:12,008 INFO - Sending TaskInstanceKey(dag_id='challenge_dag', task_id='load_task', run_id='manual__2024-11-28T11:12:06.741925+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2024-11-28 11:12:12,008 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'challenge_dag', 'load_task', 'manual__2024-11-28T11:12:06.741925+00:00', '--local', '--subdir', 'DAGS_FOLDER/challenge_dag.py']
+2024-11-28 11:12:12,011 INFO - Executing command: ['airflow', 'tasks', 'run', 'challenge_dag', 'load_task', 'manual__2024-11-28T11:12:06.741925+00:00', '--local', '--subdir', 'DAGS_FOLDER/challenge_dag.py']
+2024-11-28 11:12:14,433 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='challenge_dag', task_id='load_task', run_id='manual__2024-11-28T11:12:06.741925+00:00', try_number=1, map_index=-1)
+2024-11-28 11:12:14,438 INFO - TaskInstance Finished: dag_id=challenge_dag, task_id=load_task, run_id=manual__2024-11-28T11:12:06.741925+00:00, map_index=-1, run_start_date=2024-11-28 11:12:14.006531+00:00, run_end_date=2024-11-28 11:12:14.118068+00:00, run_duration=0.111537, state=success, executor_state=success, try_number=1, max_tries=0, job_id=15, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2024-11-28 11:12:12.007222+00:00, queued_by_job_id=2, pid=48760
+2024-11-28 11:12:14,479 INFO - Marking run <DagRun challenge_dag @ 2024-11-28 11:12:06.741925+00:00: manual__2024-11-28T11:12:06.741925+00:00, state:running, queued_at: 2024-11-28 11:12:06.746063+00:00. externally triggered: True> successful
+2024-11-28 11:12:14,481 INFO - DagRun Finished: dag_id=challenge_dag, execution_date=2024-11-28 11:12:06.741925+00:00, run_id=manual__2024-11-28T11:12:06.741925+00:00, run_start_date=2024-11-28 11:12:07.632784+00:00, run_end_date=2024-11-28 11:12:14.480965+00:00, run_duration=6.848181, state=success, external_trigger=True, run_type=manual, data_interval_start=2024-11-28 11:12:06.741925+00:00, data_interval_end=2024-11-28 11:12:06.741925+00:00, dag_hash=5706d19de240c75e4cbae7441234c5bd
+2024-11-28 11:12:17,725 INFO - Resetting orphaned tasks for active dag runs
+2024-11-28 11:13:15,351 INFO - 1 tasks up for execution:
+	<TaskInstance: challenge_dag.extract_task manual__2024-11-28T11:13:14.192164+00:00 [scheduled]>
+2024-11-28 11:13:15,351 INFO - DAG challenge_dag has 0/16 running and queued tasks
+2024-11-28 11:13:15,352 INFO - Setting the following tasks to queued state:
+	<TaskInstance: challenge_dag.extract_task manual__2024-11-28T11:13:14.192164+00:00 [scheduled]>
+2024-11-28 11:13:15,353 INFO - Sending TaskInstanceKey(dag_id='challenge_dag', task_id='extract_task', run_id='manual__2024-11-28T11:13:14.192164+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default
+2024-11-28 11:13:15,353 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'challenge_dag', 'extract_task', 'manual__2024-11-28T11:13:14.192164+00:00', '--local', '--subdir', 'DAGS_FOLDER/challenge_dag.py']
+2024-11-28 11:13:15,356 INFO - Executing command: ['airflow', 'tasks', 'run', 'challenge_dag', 'extract_task', 'manual__2024-11-28T11:13:14.192164+00:00', '--local', '--subdir', 'DAGS_FOLDER/challenge_dag.py']
+2024-11-28 11:13:17,285 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='challenge_dag', task_id='extract_task', run_id='manual__2024-11-28T11:13:14.192164+00:00', try_number=1, map_index=-1)
+2024-11-28 11:13:17,288 INFO - TaskInstance Finished: dag_id=challenge_dag, task_id=extract_task, run_id=manual__2024-11-28T11:13:14.192164+00:00, map_index=-1, run_start_date=2024-11-28 11:13:16.790698+00:00, run_end_date=2024-11-28 11:13:16.966479+00:00, run_duration=0.175781, state=success, executor_state=success, try_number=1, max_tries=0, job_id=12, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2024-11-28 11:13:15.352501+00:00, queued_by_job_id=2, pid=49227
+2024-11-28 11:13:17,336 INFO - 1 tasks up for execution:
+	<TaskInstance: challenge_dag.transform_task manual__2024-11-28T11:13:14.192164+00:00 [scheduled]>
+2024-11-28 11:13:17,336 INFO - DAG challenge_dag has 0/16 running and queued tasks
+2024-11-28 11:13:17,336 INFO - Setting the following tasks to queued state:
+	<TaskInstance: challenge_dag.transform_task manual__2024-11-28T11:13:14.192164+00:00 [scheduled]>
+2024-11-28 11:13:17,337 INFO - Sending TaskInstanceKey(dag_id='challenge_dag', task_id='transform_task', run_id='manual__2024-11-28T11:13:14.192164+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2024-11-28 11:13:17,338 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'challenge_dag', 'transform_task', 'manual__2024-11-28T11:13:14.192164+00:00', '--local', '--subdir', 'DAGS_FOLDER/challenge_dag.py']
+2024-11-28 11:13:17,340 INFO - Executing command: ['airflow', 'tasks', 'run', 'challenge_dag', 'transform_task', 'manual__2024-11-28T11:13:14.192164+00:00', '--local', '--subdir', 'DAGS_FOLDER/challenge_dag.py']
+2024-11-28 11:13:19,299 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='challenge_dag', task_id='transform_task', run_id='manual__2024-11-28T11:13:14.192164+00:00', try_number=1, map_index=-1)
+2024-11-28 11:13:19,302 INFO - TaskInstance Finished: dag_id=challenge_dag, task_id=transform_task, run_id=manual__2024-11-28T11:13:14.192164+00:00, map_index=-1, run_start_date=2024-11-28 11:13:18.827103+00:00, run_end_date=2024-11-28 11:13:18.989474+00:00, run_duration=0.162371, state=success, executor_state=success, try_number=1, max_tries=0, job_id=13, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2024-11-28 11:13:17.337008+00:00, queued_by_job_id=2, pid=49248
+2024-11-28 11:13:19,344 INFO - 1 tasks up for execution:
+	<TaskInstance: challenge_dag.load_task manual__2024-11-28T11:13:14.192164+00:00 [scheduled]>
+2024-11-28 11:13:19,344 INFO - DAG challenge_dag has 0/16 running and queued tasks
+2024-11-28 11:13:19,344 INFO - Setting the following tasks to queued state:
+	<TaskInstance: challenge_dag.load_task manual__2024-11-28T11:13:14.192164+00:00 [scheduled]>
+2024-11-28 11:13:19,345 INFO - Sending TaskInstanceKey(dag_id='challenge_dag', task_id='load_task', run_id='manual__2024-11-28T11:13:14.192164+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2024-11-28 11:13:19,346 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'challenge_dag', 'load_task', 'manual__2024-11-28T11:13:14.192164+00:00', '--local', '--subdir', 'DAGS_FOLDER/challenge_dag.py']
+2024-11-28 11:13:19,348 INFO - Executing command: ['airflow', 'tasks', 'run', 'challenge_dag', 'load_task', 'manual__2024-11-28T11:13:14.192164+00:00', '--local', '--subdir', 'DAGS_FOLDER/challenge_dag.py']
+2024-11-28 11:13:21,696 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='challenge_dag', task_id='load_task', run_id='manual__2024-11-28T11:13:14.192164+00:00', try_number=1, map_index=-1)
+2024-11-28 11:13:21,699 INFO - TaskInstance Finished: dag_id=challenge_dag, task_id=load_task, run_id=manual__2024-11-28T11:13:14.192164+00:00, map_index=-1, run_start_date=2024-11-28 11:13:21.267527+00:00, run_end_date=2024-11-28 11:13:21.378424+00:00, run_duration=0.110897, state=success, executor_state=success, try_number=1, max_tries=0, job_id=14, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2024-11-28 11:13:19.344906+00:00, queued_by_job_id=2, pid=49266
+2024-11-28 11:13:21,738 INFO - Marking run <DagRun challenge_dag @ 2024-11-28 11:13:14.192164+00:00: manual__2024-11-28T11:13:14.192164+00:00, state:running, queued_at: 2024-11-28 11:13:14.201045+00:00. externally triggered: True> successful
+2024-11-28 11:13:21,738 INFO - DagRun Finished: dag_id=challenge_dag, execution_date=2024-11-28 11:13:14.192164+00:00, run_id=manual__2024-11-28T11:13:14.192164+00:00, run_start_date=2024-11-28 11:13:15.335188+00:00, run_end_date=2024-11-28 11:13:21.738874+00:00, run_duration=6.403686, state=success, external_trigger=True, run_type=manual, data_interval_start=2024-11-28 11:13:14.192164+00:00, data_interval_end=2024-11-28 11:13:14.192164+00:00, dag_hash=b6c7884bad6b52a4a8628a0b0e0fc044
+2024-11-28 11:17:17,753 INFO - Resetting orphaned tasks for active dag runs
+2024-11-28 11:18:42,374 INFO - Exiting gracefully upon receiving signal 15
+2024-11-28 11:18:43,378 INFO - Sending Signals.SIGTERM to group 4295. PIDs of all processes in the group: [4295]
+2024-11-28 11:18:43,379 INFO - Sending the signal Signals.SIGTERM to group 4295
+2024-11-28 11:18:43,592 INFO - Process psutil.Process(pid=4295, status='terminated', exitcode=0, started='09:32:16') (4295) terminated with exit code 0
+2024-11-28 11:18:43,594 INFO - Sending Signals.SIGTERM to group 4295. PIDs of all processes in the group: []
+2024-11-28 11:18:43,595 INFO - Sending the signal Signals.SIGTERM to group 4295
+2024-11-28 11:18:43,595 INFO - Sending the signal Signals.SIGTERM to process 4295 as process group is missing.
+2024-11-28 11:18:43,595 INFO - Exited execute loop
