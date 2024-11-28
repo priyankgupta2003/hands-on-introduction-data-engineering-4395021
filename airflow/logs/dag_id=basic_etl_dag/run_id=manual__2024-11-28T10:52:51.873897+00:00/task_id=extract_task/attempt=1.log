@@ -1,0 +1,27 @@
+[2024-11-28T10:52:53.770+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: basic_etl_dag.extract_task manual__2024-11-28T10:52:51.873897+00:00 [queued]>
+[2024-11-28T10:52:53.776+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: basic_etl_dag.extract_task manual__2024-11-28T10:52:51.873897+00:00 [queued]>
+[2024-11-28T10:52:53.776+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2024-11-28T10:52:53.791+0000] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): extract_task> on 2024-11-28 10:52:51.873897+00:00
+[2024-11-28T10:52:53.796+0000] {standard_task_runner.py:57} INFO - Started process 40721 to run task
+[2024-11-28T10:52:53.801+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'basic_etl_dag', 'extract_task', 'manual__2024-11-28T10:52:51.873897+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/basic_etl_dag.py', '--cfg-path', '/tmp/tmp878fey7v']
+[2024-11-28T10:52:53.801+0000] {standard_task_runner.py:85} INFO - Job 9: Subtask extract_task
+[2024-11-28T10:52:53.829+0000] {task_command.py:410} INFO - Running <TaskInstance: basic_etl_dag.extract_task manual__2024-11-28T10:52:51.873897+00:00 [running]> on host codespaces-c5d7e2
+[2024-11-28T10:52:53.872+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='basic_etl_dag' AIRFLOW_CTX_TASK_ID='extract_task' AIRFLOW_CTX_EXECUTION_DATE='2024-11-28T10:52:51.873897+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-28T10:52:51.873897+00:00'
+[2024-11-28T10:52:53.872+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-11-28T10:52:53.873+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'wget -c https://raw.githubusercontent.com/LinkedInLearning/hands-on-introduction-data-engineering-4395021/main/data/top-level-domain-names.csv -O /workspaces/hands-on-introduction-data-engineering-4395021/lab/end-to-end/basic-etl-extract-data.csv']
+[2024-11-28T10:52:53.880+0000] {subprocess.py:86} INFO - Output:
+[2024-11-28T10:52:53.894+0000] {subprocess.py:93} INFO - --2024-11-28 10:52:53--  https://raw.githubusercontent.com/LinkedInLearning/hands-on-introduction-data-engineering-4395021/main/data/top-level-domain-names.csv
+[2024-11-28T10:52:53.905+0000] {subprocess.py:93} INFO - Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+[2024-11-28T10:52:53.913+0000] {subprocess.py:93} INFO - Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+[2024-11-28T10:52:54.123+0000] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 200 OK
+[2024-11-28T10:52:54.124+0000] {subprocess.py:93} INFO - Length: 42789 (42K) [text/plain]
+[2024-11-28T10:52:54.124+0000] {subprocess.py:93} INFO - Saving to: ‘/workspaces/hands-on-introduction-data-engineering-4395021/lab/end-to-end/basic-etl-extract-data.csv’
+[2024-11-28T10:52:54.124+0000] {subprocess.py:93} INFO - 
+[2024-11-28T10:52:54.132+0000] {subprocess.py:93} INFO -      0K .......... .......... .......... .......... .         100% 5.07M=0.008s
+[2024-11-28T10:52:54.132+0000] {subprocess.py:93} INFO - 
+[2024-11-28T10:52:54.132+0000] {subprocess.py:93} INFO - 2024-11-28 10:52:54 (5.07 MB/s) - ‘/workspaces/hands-on-introduction-data-engineering-4395021/lab/end-to-end/basic-etl-extract-data.csv’ saved [42789/42789]
+[2024-11-28T10:52:54.132+0000] {subprocess.py:93} INFO - 
+[2024-11-28T10:52:54.133+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-11-28T10:52:54.146+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=basic_etl_dag, task_id=extract_task, execution_date=20241128T105251, start_date=20241128T105253, end_date=20241128T105254
+[2024-11-28T10:52:54.177+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-11-28T10:52:54.192+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check
