@@ -1080,3 +1080,10 @@ TypeError: DAG.__init__() got an unexpected keyword argument 'schedules'
 [2024-11-28T11:01:10.450+0000] {logging_mixin.py:150} INFO - [2024-11-28T11:01:10.449+0000] {dag.py:2742} INFO - Sync 1 DAGs
 [2024-11-28T11:01:10.546+0000] {logging_mixin.py:150} INFO - [2024-11-28T11:01:10.546+0000] {dag.py:3504} INFO - Setting next_dagrun for two_task_dag to None, run_after=None
 [2024-11-28T11:01:10.559+0000] {processor.py:179} INFO - Processing /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dags/two_task_dag.py took 0.139 seconds
+[2024-11-28T11:01:40.917+0000] {processor.py:157} INFO - Started process (PID=44456) to work on /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dags/two_task_dag.py
+[2024-11-28T11:01:40.918+0000] {processor.py:826} INFO - Processing file /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dags/two_task_dag.py for tasks to queue
+[2024-11-28T11:01:40.918+0000] {logging_mixin.py:150} INFO - [2024-11-28T11:01:40.918+0000] {dagbag.py:541} INFO - Filling up the DagBag from /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dags/two_task_dag.py
+[2024-11-28T11:01:40.925+0000] {processor.py:836} INFO - DAG(s) dict_keys(['two_task_dag']) retrieved from /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dags/two_task_dag.py
+[2024-11-28T11:01:40.942+0000] {logging_mixin.py:150} INFO - [2024-11-28T11:01:40.942+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-11-28T11:01:40.956+0000] {logging_mixin.py:150} INFO - [2024-11-28T11:01:40.956+0000] {dag.py:3504} INFO - Setting next_dagrun for two_task_dag to None, run_after=None
+[2024-11-28T11:01:40.969+0000] {processor.py:179} INFO - Processing /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dags/two_task_dag.py took 0.054 seconds

@@ -142,3 +142,10 @@
 [2024-11-28T11:00:55.610+0000] {logging_mixin.py:150} INFO - [2024-11-28T11:00:55.610+0000] {dag.py:2742} INFO - Sync 1 DAGs
 [2024-11-28T11:00:55.623+0000] {logging_mixin.py:150} INFO - [2024-11-28T11:00:55.623+0000] {dag.py:3504} INFO - Setting next_dagrun for basic_etl_dag to None, run_after=None
 [2024-11-28T11:00:55.637+0000] {processor.py:179} INFO - Processing /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dags/basic_etl_dag.py took 0.399 seconds
+[2024-11-28T11:01:25.735+0000] {processor.py:157} INFO - Started process (PID=44262) to work on /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dags/basic_etl_dag.py
+[2024-11-28T11:01:25.736+0000] {processor.py:826} INFO - Processing file /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dags/basic_etl_dag.py for tasks to queue
+[2024-11-28T11:01:25.736+0000] {logging_mixin.py:150} INFO - [2024-11-28T11:01:25.736+0000] {dagbag.py:541} INFO - Filling up the DagBag from /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dags/basic_etl_dag.py
+[2024-11-28T11:01:25.983+0000] {processor.py:836} INFO - DAG(s) dict_keys(['basic_etl_dag']) retrieved from /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dags/basic_etl_dag.py
+[2024-11-28T11:01:25.998+0000] {logging_mixin.py:150} INFO - [2024-11-28T11:01:25.998+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-11-28T11:01:26.014+0000] {logging_mixin.py:150} INFO - [2024-11-28T11:01:26.014+0000] {dag.py:3504} INFO - Setting next_dagrun for basic_etl_dag to None, run_after=None
+[2024-11-28T11:01:26.032+0000] {processor.py:179} INFO - Processing /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dags/basic_etl_dag.py took 0.299 seconds
