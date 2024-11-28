@@ -1,0 +1,18 @@
+[2024-11-28T09:28:21.830+0000] {processor.py:157} INFO - Started process (PID=2516) to work on /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2024-11-28T09:28:21.831+0000] {processor.py:826} INFO - Processing file /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py for tasks to queue
+[2024-11-28T09:28:21.831+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:21.831+0000] {dagbag.py:541} INFO - Filling up the DagBag from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2024-11-28T09:28:21.838+0000] {processor.py:836} INFO - DAG(s) dict_keys(['example_nested_branch_dag']) retrieved from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2024-11-28T09:28:21.939+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:21.939+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:example_nested_branch_dag
+[2024-11-28T09:28:21.950+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:21.950+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:example_nested_branch_dag
+[2024-11-28T09:28:21.958+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:21.958+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:example_nested_branch_dag
+[2024-11-28T09:28:21.967+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:21.967+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-11-28T09:28:21.975+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:21.975+0000] {dag.py:2763} INFO - Creating ORM DAG for example_nested_branch_dag
+[2024-11-28T09:28:21.982+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:21.982+0000] {dag.py:3504} INFO - Setting next_dagrun for example_nested_branch_dag to 2024-11-27T00:00:00+00:00, run_after=2024-11-28T00:00:00+00:00
+[2024-11-28T09:28:21.998+0000] {processor.py:179} INFO - Processing /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py took 0.170 seconds
+[2024-11-28T09:29:07.536+0000] {processor.py:157} INFO - Started process (PID=2927) to work on /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2024-11-28T09:29:07.537+0000] {processor.py:826} INFO - Processing file /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py for tasks to queue
+[2024-11-28T09:29:07.537+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:29:07.537+0000] {dagbag.py:541} INFO - Filling up the DagBag from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2024-11-28T09:29:07.544+0000] {processor.py:836} INFO - DAG(s) dict_keys(['example_nested_branch_dag']) retrieved from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2024-11-28T09:29:07.557+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:29:07.557+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-11-28T09:29:07.574+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:29:07.574+0000] {dag.py:3504} INFO - Setting next_dagrun for example_nested_branch_dag to 2024-11-27T00:00:00+00:00, run_after=2024-11-28T00:00:00+00:00
+[2024-11-28T09:29:07.588+0000] {processor.py:179} INFO - Processing /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py took 0.054 seconds

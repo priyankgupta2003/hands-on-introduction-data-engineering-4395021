@@ -1,0 +1,21 @@
+[2024-11-28T09:28:33.760+0000] {processor.py:157} INFO - Started process (PID=2654) to work on /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2024-11-28T09:28:33.760+0000] {processor.py:826} INFO - Processing file /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2024-11-28T09:28:33.761+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:33.761+0000] {dagbag.py:541} INFO - Filling up the DagBag from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2024-11-28T09:28:33.768+0000] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_3', 'example_branch_datetime_operator', 'example_branch_datetime_operator_2']) retrieved from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2024-11-28T09:28:33.842+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:33.842+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:example_branch_datetime_operator_3
+[2024-11-28T09:28:33.851+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:33.851+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:example_branch_datetime_operator_3
+[2024-11-28T09:28:33.858+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:33.858+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:example_branch_datetime_operator_3
+[2024-11-28T09:28:33.878+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:33.878+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:example_branch_datetime_operator
+[2024-11-28T09:28:33.884+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:33.884+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:example_branch_datetime_operator
+[2024-11-28T09:28:33.890+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:33.890+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:example_branch_datetime_operator
+[2024-11-28T09:28:33.911+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:33.911+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:example_branch_datetime_operator_2
+[2024-11-28T09:28:33.919+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:33.919+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:example_branch_datetime_operator_2
+[2024-11-28T09:28:33.925+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:33.925+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:example_branch_datetime_operator_2
+[2024-11-28T09:28:33.928+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:33.928+0000] {dag.py:2742} INFO - Sync 3 DAGs
+[2024-11-28T09:28:33.937+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:33.937+0000] {dag.py:2763} INFO - Creating ORM DAG for example_branch_datetime_operator_3
+[2024-11-28T09:28:33.937+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:33.937+0000] {dag.py:2763} INFO - Creating ORM DAG for example_branch_datetime_operator_2
+[2024-11-28T09:28:33.937+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:33.937+0000] {dag.py:2763} INFO - Creating ORM DAG for example_branch_datetime_operator
+[2024-11-28T09:28:33.945+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:33.945+0000] {dag.py:3504} INFO - Setting next_dagrun for example_branch_datetime_operator to 2024-11-27T00:00:00+00:00, run_after=2024-11-28T00:00:00+00:00
+[2024-11-28T09:28:33.946+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:33.946+0000] {dag.py:3504} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2024-11-27T00:00:00+00:00, run_after=2024-11-28T00:00:00+00:00
+[2024-11-28T09:28:33.947+0000] {logging_mixin.py:150} INFO - [2024-11-28T09:28:33.947+0000] {dag.py:3504} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2024-11-27T00:00:00+00:00, run_after=2024-11-28T00:00:00+00:00
+[2024-11-28T09:28:33.963+0000] {processor.py:179} INFO - Processing /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.205 seconds
